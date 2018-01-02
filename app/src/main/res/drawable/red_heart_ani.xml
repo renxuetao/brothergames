@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"   >
+    <item android:drawable="@drawable/red_heart_001" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_002" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_003" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_004" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_005" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_006" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_007" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_008" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_009" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_010" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_011" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_012" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_013" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_014" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_015" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_016" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_017" android:duration="150"></item>
+    <item android:drawable="@drawable/red_heart_018" android:duration="150"></item>
+</animation-list>

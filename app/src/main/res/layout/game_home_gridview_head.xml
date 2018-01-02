@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1F0F6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/game_recent_root_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:singleLine="true"
+            android:text="@string/recently_playing"
+            android:textColor="@color/nikename_color"
+            android:textSize="17.72dip" />
+
+        <com.widget.GridViewWithHeaderAndFooter
+            android:id="@+id/head_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="200.0dip"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8.0dip"
+            android:background="@color/grey_e4e4e4" />
+
+        <TextView
+            android:id="@+id/griview_title"
+            android:layout_width="match_parent"
+            android:layout_height="33.86dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical|bottom"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:singleLine="true"
+            android:text="@string/game_center"
+            android:textColor="@color/nikename_color"
+            android:textSize="17.72dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16.14dip" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.widget.XWebView
+        android:id="@+id/WebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/complete_fl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_phone_click_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/back_fl"
+            android:layout_width="55dip"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/back_width"
+                android:layout_height="@dimen/back_width"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="19.24dp"
+                android:background="@drawable/close_btn"
+                android:duplicateParentState="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

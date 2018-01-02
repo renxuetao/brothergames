@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="top_height">49.11dip</dimen>
+    <dimen name="top_height_margin">48.11dip</dimen>
+    <!-- 左右统一间距 -->
+    <dimen name="lr_interval">5dp</dimen>
+    <!-- 上部统一间距 -->
+    <dimen name="top_interval">10dp</dimen>
+    <!-- 头像尺寸 -->
+	<dimen name="head_bg_wh">42dip</dimen>
+	<dimen name="head_wh">39dp</dimen>
+	<dimen name="height_43">43dip</dimen>
+	<dimen name="height_26">26dip</dimen>
+	<dimen name="width_26">26dip</dimen>
+	
+	<dimen name="stgv_margin">8dp</dimen>
+	<dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    
+    <dimen name="title_height">43.54dip</dimen>
+    
+    <dimen name="delete_action_len">90dip</dimen>
+    
+    <dimen name="hint_y_offset">64dip</dimen>
+    
+    <dimen name="zhuita_move">18dp</dimen>
+    <dimen name="zhuita_wh">170dp</dimen>
+    <dimen name="chatto_maxwidth">210dp</dimen>
+    
+    <dimen name="head_round_bg">58dp</dimen>
+    <dimen name="head_round">58dp</dimen>
+    <dimen name="item_heiht">76dp</dimen>
+    <dimen name="font18">18dp</dimen>
+    <dimen name="font14">14dp</dimen>
+    <dimen name="font15">15dp</dimen>
+    <dimen name="font16">16dp</dimen>
+    <dimen name="font12">12dp</dimen>
+    
+    <dimen name="guide_white_width">220dp</dimen>
+    <dimen name="guide6_btn_top_margin">56dp</dimen>
+    <dimen name="guide_btn_bg_radius">58dp</dimen>
+    <dimen name="common_left_right_margin">7dp</dimen>
+    <dimen name="common_top_margin">2dp</dimen>
+    
+    <dimen name="received_gift_item_height">129dp</dimen>
+    <dimen name="received_gift_lv_vertical_space">18dp</dimen>
+    
+    <dimen name="back_width">11.14dp</dimen>
+    <dimen name="back_height">18.23dp</dimen>
+    
+    <dimen name="sex_img_width">14dp</dimen>
+    <dimen name="sex_img_height">13.5dp</dimen>
+    
+    <dimen name="album_margin">7dp</dimen>
+    
+    <dimen name="encounter_item_tag_bg_w">266.33dp</dimen>
+    <dimen name="encounter_item_tag_bg_h">63.8dp</dimen>
+    <dimen name="_encounter_item_tag_bg_h">-64dp</dimen>
+    
+    <dimen name="reg_sex_dissel">38dp</dimen>
+    <dimen name="reg_sex_sel">50dp</dimen>
+    
+    <dimen name="main_menu_h">50.63dp</dimen>
+    
+    <dimen name="anonynous_topic_main_item_label_height">42.0dip</dimen>
+    <dimen name="anonynous_topic_main_item_label_margin">10.0dip</dimen>
+    <dimen name="anonynous_topic_main_item_bottom_label_margin">20.0dip</dimen>
+    <dimen name="anonynous_topic_main_item_label_text_size">15.0sp</dimen>
+    <dimen name="anonynous_topic_main_item_label_image_text_size">12.0sp</dimen>
+    <dimen name="anonynous_topic_detail_item_label_image_text_size">11.0sp</dimen>
+    <dimen name="anonynous_topic_main_item_bottom_label_image_size">20.0sp</dimen>
+    <dimen name="anonynous_topic_main_item_content_text_size">22.0sp</dimen>
+    <dimen name="anonynous_topic_main_title">19.0sp</dimen>
+    <dimen name="anonynous_topic_main_item_text_padding">25.0dip</dimen>
+    <dimen name="anonynous_topic_new_topic_text_content_padding">15.0dip</dimen>
+    <dimen name="anonynous_topic_main_item_text_padding_left_right">6.0dip</dimen>
+    <dimen name="anonynous_topic_main_item_label_image_height">210.0dip</dimen>
+    <dimen name="anonynous_topic_top_height">43.0dip</dimen>
+    <dimen name="anonynous_topic_item_label_content_height">197.0dip</dimen>
+    <dimen name="anonynous_topic_new_topic_content_height">243.0dip</dimen>
+    <dimen name="anonynous_topic_detail_item_label_content_height">320.0dip</dimen>
+    <dimen name="anonynous_topic_item_label_image_text_height">90.0dip</dimen>
+    <dimen name="anonynous_topic_detail_item_label_image_text_height">100.0dip</dimen>
+    <dimen name="anonynous_topic_detail_item_icon_size">35.0dip</dimen>
+    
+    <item name="menuFromDegrees" format="float" type="dimen">180.0</item>
+    <item name="menuToDegrees" format="float" type="dimen">360.0</item>
+    <item name="chatMenuFromDegrees" format="float" type="dimen">210.0</item>
+    <item name="chatMenuToDegrees" format="float" type="dimen">330.0</item>
+    <dimen name="menuChildSize">40dp</dimen>
+    
+    <!-- facebook -->
+    <dimen name="com_facebook_likeview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likeview_edge_padding">2dp</dimen>
+    <dimen name="com_facebook_likeview_internal_padding">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_width">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_height">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_padding">6dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>
+    <dimen name="com_facebook_share_button_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_left">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_right">16dp</dimen>
+    <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
+    <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+    
+    <!-- camera -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="thumbnail_imageview_size">44.0dip</dimen>
+    <dimen name="bottom_bar_height">85.0dip</dimen>
+    <dimen name="top_menu_bar_height">37.0dip</dimen>
+    <dimen name="shutter_bottom_size">62.0dip</dimen>
+    <dimen name="album_header_bar_height">50.0dip</dimen>
+    <dimen name="title_view_left_back_padding_left">12.0dip</dimen>
+    <dimen name="title_view_left_back_padding_right">12.0dip</dimen>
+    <dimen name="album_header_btn_width">48.0dip</dimen>
+    <dimen name="album_rooter_bar_height">48.0dip</dimen>
+    <dimen name="album_rooter_bar_text_size">16.0sp</dimen>
+    <dimen name="videodetails_textsize_time">13.0dip</dimen>
+    <dimen name="video_bottom_bar_height">40.0dip</dimen>
+    
+    <dimen name="seismic_wave_view">100px</dimen>
+    
+    <dimen name="title_bar_height">44.0dip</dimen>
+    <dimen name="head_size">28.0dip</dimen>
+    <dimen name="top_category_height">40.0dip</dimen>
+    <dimen name="category_tab_text">15.0sp</dimen>
+
+</resources>

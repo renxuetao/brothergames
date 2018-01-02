@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="stgv" type="id"/>
+    
+    
+    <item name="anonymous_topic_label_comment_root" type="id">false</item>
+    <item name="anonymous_topic_label_relation" type="id">false</item>
+    <item name="anonymous_topic_label_comment_number" type="id">false</item>
+    <item name="anonymous_topic_label_comment_number_txt" type="id">false</item>
+    <item name="anonymous_topic_label_evaluate_number" type="id">false</item>
+    <item name="anonymous_topic_label_evaluate_number_txt" type="id">false</item>
+    <item name="anonymous_topic_label_custom" type="id">false</item>
+    <item name="anonymous_topic_label_content" type="id">false</item>
+    <item name="anonymous_topic_label_imageview" type="id">false</item>
+    <item name="anonymous_topic_label_imageview_content" type="id">false</item>
+    <item name="anonymous_topic_label_imageview_content_root" type="id">false</item>
+    
+    <item name="anonymous_topic_label_gender" type="id">false</item>
+    <item name="anonymous_topic_botton_label_hot_root" type="id">false</item>
+    <item name="anonymous_topic_botton_label_hot_text" type="id">false</item>
+    <item name="anonymous_topic_botton_label_hot_img" type="id">false</item>
+    <item name="anonymous_topic_top_label_text_root" type="id">false</item>
+    <item name="anonymous_topic_top_label_img_root" type="id">false</item>
+    <item name="anonymous_topic_top_label_img_tv_root" type="id">false</item>
+    <item name="anonymous_topic_detail_item_name" type="id">false</item>
+    <item name="anonymous_topic_detail_item_content" type="id">false</item>
+    <item name="anonymous_topic_detail_item_position" type="id">false</item>
+    <item name="anonymous_topic_detail_item_time" type="id">false</item>
+    <item name="anonymous_topic_detail_item_icon" type="id">false</item>
+    <item name="anonymous_topic_detail_item_content_root" type="id">false</item>
+    <item name="anonymous_topic_detail_item_icon_root" type="id">false</item>
+    <item name="anonymous_topic_detail_item_heart_btn" type="id">false</item>
+    <item name="anonymous_topic_detail_item_heart_root" type="id">false</item>
+    <item name="anonymous_topic_detail_item_heart_text" type="id">false</item>
+    <item name="anonymous_topic_detail_contianer" type="id">false</item>
+    <item name="discover_frag_open_anonymous_topic" type="id">false</item>
+    <item name="choose_topic_type_view" type="id">false</item>
+    <item name="anonymous_topic_label_evaluate_heartimag" type="id">false</item>
+    <item name="anonymous_topic_detail_no_reply" type="id">false</item>
+    <item name="cold_notic_pull_hint_root" type="id">false</item>
+    <item name="cold_notic_pull_hint_tv" type="id">false</item>
+    
+    <item name="tag_anonymoustopic_id" type="id">false</item>
+    <item name="tag_convertview_id" type="id">false</item>
+    <item name="tag_holder_id" type="id">false</item>
+    <item name="tag_ischeck_id" type="id">false</item>
+    <item name="container" type="id">false</item>
+    <item name="at_ts_count_msg" type="id">false</item>
+    
+    <item name="official_container" type="id">false</item>
+    <item name="official_anonymous_topic_label_imageview" type="id">false</item>
+    <item name="official_anonymous_topic_label_content" type="id">false</item>
+    <item name="official_anonymous_topic_label_imageview_content" type="id">false</item>
+    <item name="official_anonymous_topic_label_button" type="id">false</item>
+
+    <!-- Just adding these so I wont have to remove a lot of code from NumberPicker.java. -->
+    <item name="np__increment" type="id" />
+    <item name="np__decrement" type="id" />
+    <item name="maylikeme_rank_balance_ll" type="id" />
+    
+    
+    <item name="ray_menu_layout_touch_view" type="id" />
+    <item name="guide_layout" type="id" />
+    
+    <!-- sexting -->
+    <item name="guanxi_tv" type="id" />
+    <item name="checheng_tv" type="id" />
+    <item name="heart_count" type="id" />
+    <item name="nikename" type="id" />
+    <item name="login_time_tv" type="id" />
+    <item name="head" type="id" />
+    <item name="heart_layout" type="id" />
+    <item name="gongneng_layout" type="id" />
+    <item name="sign_tv" type="id" />
+    <item name="info_layout" type="id" />
+    <item name="heart_iv" type="id" />
+    <item name="photo_count" type="id" />
+    <item name="gender_iv" type="id" />
+    <item name="encounter_rotate_radar_radar" type="id" />
+    <item name="dazhaohu_tv" type="id" />
+    <item name="xiehou_layout_cf" type="id" />
+    <item name="lbs" type="id" />
+    <item name="source" type="id" />
+    <item name="time" type="id" />
+    <item name="new_mark" type="id" />
+    <item name="msg" type="id" />
+    <item name="content_rl" type="id" />
+    <item name="line_top" type="id" />
+    <item name="head_layout" type="id" />
+    <item name="catalog" type="id" />
+    <item name="title_recommend" type="id" />
+    <item name="pulltorefresh" type="id" />
+    <item name="pull_refresh_list" type="id" />
+    <item name="filter_emotion_btn" type="id" />
+    <item name="error_tv" type="id" />
+    <item name="xlistview_footer_hint_textview" type="id" />
+    <item name="xlistview_footer_progressbar" type="id" />
+    <item name="person_pushmind_tb" type="id" />
+    <item name="et_sendmind" type="id" />
+    <item name="content_ll" type="id" />
+    <item name="picture_gv" type="id" />
+    <item name="up_top_ll" type="id" />
+    <item name="yunxiangce" type="id" />
+    <item name="xiangce" type="id" />
+    <item name="paizhao" type="id" />
+    <item name="quxiao" type="id" />
+    <item name="pop_layout" type="id" />
+    <item name="title_layout" type="id" />
+    <item name="back_fl" type="id" />
+    <item name="back" type="id" />
+    <item name="complete_fl" type="id" />
+    <item name="complete_image" type="id" />
+    <item name="complete" type="id" />
+    <item name="touxiang_yuan" type="id" />
+    <item name="sex_fl" type="id" />
+    <item name="emotion_icon_text" type="id" />
+    <item name="caozuo_rl" type="id" />
+    <item name="caozuo_img" type="id" />
+    <item name="love" type="id" />
+    <item name="reply" type="id" />
+    <item name="news_list" type="id" />
+    <item name="news_text" type="id" />
+    <item name="news_list_relaytive" type="id" />
+    <item name="dynamicinfo_layout" type="id" />
+    <item name="rl_bottom" type="id" />
+    <item name="btn_send" type="id" />
+    <item name="ivPopUp_fl" type="id" />
+    <item name="ivPopUp" type="id" />
+    <item name="et_sendmessage" type="id" />
+    <item name="viewpager" type="id" />
+    <item name="page_select" type="id" />
+    <item name="page0_select" type="id" />
+    <item name="page1_select" type="id" />
+    <item name="page2_select" type="id" />
+    <item name="page3_select" type="id" />
+    <item name="caozuo_img_donw_rl_new" type="id" />
+    <item name="down_ll" type="id" />
+    <item name="bottom_ll" type="id" />
+    <item name="comment_btn" type="id" />
+    <item name="dianzan_btn" type="id" />
+    
+    <item name="distan_btn" type="id" />
+    <item name="time_btn" type="id" />
+    <item name="male_btn" type="id" />
+    <item name="female_btn" type="id" />
+    <item name="all_btn" type="id" />
+    <item name="fifteen_btn" type="id" />
+    <item name="thirty_btn" type="id" />
+    <item name="one_day_btn" type="id" />
+    <item name="three_day_btn" type="id" />
+    <item name="enter_btn" type="id" />
+    
+    <item name="distan_tv" type="id" />
+    <item name="time_tv" type="id" />
+    <item name="male_tv" type="id" />
+    <item name="female_tv" type="id" />
+    <item name="all_tv" type="id" />
+    <item name="fifteen_tv" type="id" />
+    <item name="thirty_tv" type="id" />
+    <item name="one_day_tv" type="id" />
+    <item name="three_day_tv" type="id" />
+    <item name="online_rl" type="id" />
+    <item name="sex" type="id" />
+    <item name="name" type="id" />
+    <item name="touxiang_rl" type="id" />
+    <item name="blur_img" type="id" />
+    <item name="blur_text" type="id" />
+    <item name="mingcheng_rl" type="id" />
+    <item name="iv_userhead" type="id" />
+    <item name="touxiang" type="id" />
+    <item name="name_layout" type="id" />
+    <item name="money_iv" type="id" />
+    <item name="money_tv" type="id" />
+    <item name="hear_tv" type="id" />
+    <item name="fengmian_rl" type="id" />
+    <item name="xingbie_xinjia" type="id" />
+    <item name="frined_news_icon" type="id" />
+    <item name="right_arrow_new" type="id" />
+    <item name="signature" type="id" />
+    <item name="fenxiang_icon" type="id" />
+    <item name="wodedongtai_rl" type="id" />
+    <item name="shoudaoliwu_rl" type="id" />
+    <item name="friend_news_rl" type="id" />
+    <item name="imageView1" type="id" />
+    <item name="shoudaoliwu_msg" type="id" />
+    <item name="wodevip_rl" type="id" />
+    <item name="shezhi_rl" type="id" />
+    <item name="me_setting_newmsg_tv" type="id" />
+    <item name="add" type="id" />
+    <item name="more" type="id" />
+    <item name="image" type="id" />
+    <item name="horizon_listview" type="id" />
+    <item name="tab_menu" type="id" />
+    <item name="linearLayout_tab_1" type="id" />
+    <item name="linearLayout_tab_2" type="id" />
+    <item name="linearLayout_tab_3" type="id" />
+    <item name="tab_icon_1" type="id" />
+    <item name="tab_icon_2" type="id" />
+    <item name="tab_icon_3" type="id" />
+    <item name="otherhome_vp_ll" type="id" />
+    <item name="otherhome_vp_ll_fl_glass" type="id" />
+    <item name="otherhome_vp_ll_fl" type="id" />
+    <item name="interactive_item_img" type="id" />
+    <item name="interactive_item_name" type="id" />
+    <item name="interactive_pop_close_btn" type="id" />
+    <item name="interactive_item_submit" type="id" />
+    <item name="other_home_coin_count_tv" type="id" />
+    <item name="gifts_interactives_pop_pager" type="id" />
+    <item name="gifts_interactives_pop_pager_indicator" type="id" />
+    <item name="filter_encounter_btn" type="id" />
+    <item name="registe_email_ll" type="id" />
+    <item name="registe_phone_ll" type="id" />
+    <item name="email_icon" type="id" />
+    <item name="email" type="id" />
+    <item name="email_lock_icon" type="id" />
+    <item name="email_password" type="id" />
+    <item name="use_phone_registe" type="id" />
+    <item name="use_email_registe" type="id" />
+    <item name="identify_code_notify" type="id" />
+    <item name="next_btn" type="id" />
+    <item name="limitnum" type="id" />
+    <item name="displayimg" type="id" />
+    <item name="camera_ll" type="id" />
+    <item name="photo_frame" type="id" />
+    <item name="notify_title_iv" type="id" />
+    <item name="login_btn" type="id" />
+    <item name="use_phone_registe_btn" type="id" />
+    <item name="use_email_registe_btn" type="id" />
+    <item name="sign_mine_tv" type="id" />
+    <item name="account_tv" type="id" />
+    <item name="horizon_listview_line" type="id" />
+    <item name="horizon_listview_ll" type="id" />
+    <item name="picture_iv" type="id" />
+    <item name="location_ll" type="id" />
+    
+</resources>

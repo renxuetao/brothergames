@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/root_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/icon_rl"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:gravity="center">
+
+            <com.makeramen.RoundedImageView
+                android:id="@+id/car_picture_iv"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon72"
+                app:riv_border_color="#ffffff"
+                app:riv_border_width="0dp"
+                app:riv_corner_radius="5dp"
+                app:riv_mutate_background="true" />
+
+            <TextView
+                android:id="@+id/new_tips"
+                android:layout_width="32dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/game_new_bg"
+                android:gravity="center"
+                android:text="New"
+                android:textColor="@color/white"
+                android:textSize="12.0dip"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5.0dip"
+            android:singleLine="true"
+            android:text="XXX"
+            android:textColor="@color/black_393939"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:id="@+id/play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:singleLine="true"
+            android:text="XXXXXX"
+            android:textColor="@color/red_f44e50"
+            android:textSize="11.0dip"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/play_game_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3.0dip"
+            android:singleLine="true"
+            android:text="XXXXXX"
+            android:textColor="#7c7c7c"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/btn_game_play_shape"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Play"
+            android:textColor="#595959" />
+    </LinearLayout>
+</LinearLayout>

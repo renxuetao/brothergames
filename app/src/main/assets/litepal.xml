@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <!-- "shuchengpingtai" -->
+    <!-- "shoumuren" -->
+    <dbname value="brothergames" >
+    </dbname>
+
+    <!-- 1 to 2 MessageSave changed -->
+    <!-- 2 to 3 add MiInfo -->
+    <!-- 3 to 4 MiInfo add shareCount column-->
+    <!-- 4 to 5 BookRecordBasics add isWaitStart, waitStartTime, waitTime column-->
+    <!-- 5 to 6 BookChapter add index column; BookRecord add chapterfirst column-->
+    <version value="1" >
+    </version>
+
+    <list>
+        <!--<mapping class="com.com.db.BookShelf"></mapping>-->
+    </list>
+
+</litepal>
