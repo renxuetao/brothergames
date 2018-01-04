@@ -22,16 +22,24 @@ import com.activty.MainActivity;
 import com.adapter.GameGridviewAdapter;
 import com.bean.GameBean;
 import com.brother.games.R;
+import com.common.Constant;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshGridView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.utils.LogUtil;
 import com.widget.CircleImageView;
 import com.widget.GridViewWithHeaderAndFooter;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 import cn.sharesdk.onekeyshare.OnekeyShare;
+import okhttp3.Call;
 
 public class GameFragment extends Fragment implements OnClickListener {
 
@@ -230,6 +238,39 @@ public class GameFragment extends Fragment implements OnClickListener {
         error_tv.setVisibility(View.GONE);
 
         red_dot_iv = (ImageView) view.findViewById(R.id.red_dot_iv);
+    }
+
+    /**
+     * 拉去首页布局格式
+     */
+    public void getHomePageStyle() {
+        String path = Constant.SRV_URL_BASE + "/H5Games/games/findGamesByMobile.do?page="+page+"&rows=20&sort=id&oder=desc";
+        OkHttpUtils
+                .post()
+                .url(path)
+//                .addParams("account", MyApplication.getInstance().getUserAccount())
+//                .addParams("token", token)
+                .build()
+                .connTimeOut(5000)
+                .readTimeOut(5000)
+                .writeTimeOut(5000)
+                .execute(new StringCallback() {
+                    @Override
+                    public void onError(Call call, Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    @Override
+                    public void onResponse(String response) {
+                        LogUtil.d("response:" + response);
+                        try {
+                            JSONObject json = new JSONObject(response);
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
     }
 
     /**
