@@ -20,7 +20,7 @@ android {
     //配置keystore签名
     signingConfigs {
         release {
-            storeFile file("D:\\Github\\brothergames\\app\\android.jks")
+            storeFile file("/Users/renxuetao/GitHub/brothergames/app/android.jks")
             keyAlias "android.jks"
             keyPassword "locojoy123"
             storePassword "locojoy123"

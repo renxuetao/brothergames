@@ -80,7 +80,7 @@ public class GameGridviewAdapter extends BaseAdapter {
         }
         holder.game_name.setText(item.GameName);
         holder.play_time.setText(item.Playing + " played");
-        ImageLoader.getInstance().displayImage(item.GameCover, holder.car_picture_iv, options);
+//        ImageLoader.getInstance().displayImage(item.GameCover, holder.car_picture_iv, options);
         if(item.IsNew == 0){
             holder.new_tips.setVisibility(View.GONE);
         }else{

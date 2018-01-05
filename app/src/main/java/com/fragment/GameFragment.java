@@ -33,6 +33,7 @@ import com.widget.GridViewWithHeaderAndFooter;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -83,9 +84,8 @@ public class GameFragment extends Fragment implements OnClickListener {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.game_home2, container, false);
-        initPage(0, 1);
-        //UI
         initView();
+        initPage(0, 1);
         return view;
     }
 
@@ -106,6 +106,7 @@ public class GameFragment extends Fragment implements OnClickListener {
         if (mType == 1) {
             page = 0;
         }
+        getGameList(page);
     }
 
     private long lastClickTime = 0;
@@ -168,8 +169,8 @@ public class GameFragment extends Fragment implements OnClickListener {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                GameBean item = allMembers.get(i);
-                if (item.GameType == 0 || item.GameType == 1) {
+//                GameBean item = allMembers.get(i);
+//                if (item.GameType == 0 || item.GameType == 1) {
 //                    Bundle bundle = new Bundle();
 //                    bundle.putInt("type", item.IsVertical);
 //                    bundle.putString("name", item.GameName);
@@ -183,8 +184,8 @@ public class GameFragment extends Fragment implements OnClickListener {
 //                    }
 //                    bundle.putString("url", url);
 //                    activity.startActivity(GameWebViewActivity.class, bundle);
-                }
-                REFRESH_RECENT_LIST = true;
+//                }
+//                REFRESH_RECENT_LIST = true;
             }
         });
 
@@ -243,7 +244,7 @@ public class GameFragment extends Fragment implements OnClickListener {
     /**
      * 拉去首页布局格式
      */
-    public void getHomePageStyle() {
+    public void getGameList(long page) {
         String path = Constant.SRV_URL_BASE + "/H5Games/games/findGamesByMobile.do?page="+page+"&rows=20&sort=id&oder=desc";
         OkHttpUtils
                 .post()
@@ -264,8 +265,41 @@ public class GameFragment extends Fragment implements OnClickListener {
                     public void onResponse(String response) {
                         LogUtil.d("response:" + response);
                         try {
-                            JSONObject json = new JSONObject(response);
+                            if (allMembers == null) {
+                                allMembers = new ArrayList<GameBean>();
+                            } else {
+                                if (mType == 1) {
+                                    gridview.smoothScrollToPositionFromTop(0,0);
+                                    allMembers.clear();
+                                }
 
+                            }
+                            JSONObject json = new JSONObject(response);
+                            GameCount = json.getInt("total");
+                            JSONArray jArr = json.getJSONArray("rows");
+                            GameBean item = null;
+                            for (int i = 0; i < jArr.length(); i++) {
+                                JSONObject gameJson = jArr.getJSONObject(i);
+                                item = new GameBean();
+                                item.GameID = gameJson.getLong("id");
+                                item.GameName = gameJson.getString("gameName");
+                                item.GameCover = gameJson.getString("gameCover");
+                                item.Introduction = gameJson.getString("introduction");
+                                item.Url = gameJson.getString("url");
+                                item.IsVertical = gameJson.getInt("isVertical");
+                                item.IsNew = gameJson.getInt("isNew");
+                                item.GameType = gameJson.getInt("gameType");
+                                item.Playing = gameJson.getLong("playing");
+                                item.Player = gameJson.getLong("player");
+                                allMembers.add(item);
+                                item = null;
+                            }
+                            LogUtil.d("yjw", "GameBean=======" + allMembers.toString());
+                            refreshChatList();
+                            /**
+                             * 设置刷新时间
+                             */
+                            refreshModify = System.currentTimeMillis();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -347,13 +381,16 @@ public class GameFragment extends Fragment implements OnClickListener {
                                         e.printStackTrace();
                                     }
                                     mType = 0;
+                                    getGameList(page + 1);
                                     isRuning = false;
+
                                 }
                             }).start();
                         }
                     }
                 }
             } else {
+//                refreshChatList();
                 if (gridview.getFooterViewCount() > 0) { // 如果有底部视图
                     //gridview.removeFooterView(footerView);
                     footerView.setVisibility(View.GONE);

@@ -69,27 +69,28 @@
             android:visibility="visible">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icon72"/>
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/share_btn"/>
         </RelativeLayout>
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#F1F0F6">
+        android:background="@color/grey_F1F0F6">
 
         <com.handmark.pulltorefresh.library.PullToRefreshGridView
             android:id="@+id/gridview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="52.0dip"
             android:gravity="center"
             android:listSelector="@color/transparent"
             android:numColumns="3"
             android:scrollbars="none"
             android:visibility="visible" />
+        <!--android:layout_marginBottom="52.0dip"-->
 
         <TextView
             android:id="@id/error_tv"
