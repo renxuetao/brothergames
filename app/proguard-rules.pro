@@ -118,10 +118,6 @@
 -dontwarn com.tendcloud.**
 -keep public class com.tendcloud.** { public protected *;}
 
-#common-library
--keep class com.jcraft.jzlib.** { *; }
--keep class net.** { *; }
-
 -dontwarn org.dom4j.**
 -dontwarn okio.**
 
@@ -145,10 +141,6 @@
   public static final android.os.Parcelable$Creator *;
 }
 
--keep public class com.xiaomi.gamecenter.sdk.entry.* {
-			    *;
-}
-
 ##---------------Begin: proguard configuration for Gson  ----------
 -dontwarn com.google.gson.**
 -keep class com.google.gson.**{*; }
@@ -169,28 +161,15 @@
 -keep class com.google.gson.** {*;}
 
 -keep public class * implements java.io.Serializable {*;}
--keep public class com.zhangyue.game.statistics.bean.** { *;}
-
--keep public class com.fragment.NewRankingFragment { *; }
--keepclasseswithmembernames class com.fragment.NewRankingFragment {
-*;
-}
--keep class android.support.design.widget.TabLayout {*;}
 
  # removes such information by default, so configure it to keep all of it.
 -keepattributes Signature
 # Gson specific classes
-
 -keep class sun.misc.Unsafe { *; }
-
 -keep class com.google.gson.** { *; }
-
 # Application classes that will be serialized/deserialized over Gson
-
 #-keep class com.google.gson.examples.android.model.** { *; }
-
 -keep class com.googlebilling.util.** {*;}  #这句非常重要，主要是滤掉XXXX.entity包下的所有.class文件不进行混淆编译
-
 #不要混淆xUtils中的注解类型，添加混淆配置：
 -keep class * extends java.lang.annotation.Annotation { *; }
 
@@ -201,12 +180,6 @@
 -keep public class com.tencent.bugly.**{*;}
 -keep class android.support.**{*;}
 
-#share mobe
-#-keep class cn.sharesdk.**{*;}
-#-keep class com.sina.**{*;}
-#-keep class **.R$* {*;}
-#-keep class **.R{*;}
-#-keep class com.mob.**{*;}
-#-dontwarn com.mob.**
-#-dontwarn cn.sharesdk.**
-#-dontwarn **.R$*
+
+# 抑制警告
+-ignorewarnings

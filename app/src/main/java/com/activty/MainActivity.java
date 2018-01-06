@@ -1,16 +1,15 @@
 package com.activty;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
-import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,13 +18,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bean.MsgBean;
 import com.brother.games.R;
+import com.common.EventBusConstant;
 import com.fragment.GameFragment;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.tencent.bugly.crashreport.CrashReport;
 
 import java.lang.ref.WeakReference;
+
+import de.greenrobot.event.EventBus;
 
 public class MainActivity extends BaseActivity implements OnClickListener {
 
@@ -367,7 +369,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	@Override
 	public void onDestroy(){
 		super.onDestroy();
-
+		EventBus.getDefault().unregister(this);
 	}
 
 	public final MyHandler protocolHandler = new MyHandler(this);
@@ -422,6 +424,13 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	@Override
     public void onWindowFocusChanged(boolean hasFocus) {
 		if(hasFocus){
+
+		}
+	}
+
+	public void onEventMainThread(MsgBean msg) {
+		//消息推送
+		if(TextUtils.equals(msg.getType(), EventBusConstant.PUSH_MSG)){
 
 		}
 	}

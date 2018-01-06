@@ -25,7 +25,6 @@
     <!-- 访问额外的位置相关命令 -->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <!-- 判断堆栈中是否有本应用的权限 -->
-    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
     <!-- 发送短信 -->

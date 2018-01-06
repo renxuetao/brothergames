@@ -27,6 +27,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.lang.ref.WeakReference;
 
+import de.greenrobot.event.EventBus;
+
 public abstract class BaseActivity extends FragmentActivity {
 
     private android.support.v7.app.AlertDialog dialog;
@@ -91,6 +93,8 @@ public abstract class BaseActivity extends FragmentActivity {
 
         isStartedNew = false;
         isFinishedNew = false;
+
+        EventBus.getDefault().register(this);
     }
 
     @Override
