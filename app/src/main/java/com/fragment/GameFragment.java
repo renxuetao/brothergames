@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.activty.MainActivity;
+import com.activty.game.GameWebViewActivity;
 import com.adapter.GameGridviewAdapter;
 import com.bean.GameBean;
 import com.brother.games.R;
@@ -169,23 +170,11 @@ public class GameFragment extends Fragment implements OnClickListener {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                GameBean item = allMembers.get(i);
-//                if (item.GameType == 0 || item.GameType == 1) {
-//                    Bundle bundle = new Bundle();
-//                    bundle.putInt("type", item.IsVertical);
-//                    bundle.putString("name", item.GameName);
-//                    String sig = com.utils.Util.encryptMD5(MyApplication.getInstance().interaction.user.account + "-" + MyApplication.getInstance().interaction.user.token);
-//                    String url = MyApplication.getInstance().getWebUrl() + item.Url;
-//                    if (url.indexOf("?") > 0) {
-//                        url = url + "&account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
-//
-//                    } else {
-//                        url = url + "?account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
-//                    }
-//                    bundle.putString("url", url);
-//                    activity.startActivity(GameWebViewActivity.class, bundle);
-//                }
-//                REFRESH_RECENT_LIST = true;
+                GameBean item = allMembers.get(i);
+                if (item.GameType == 0 || item.GameType == 1) {
+                    openGameUrl(item);
+                }
+                REFRESH_RECENT_LIST = true;
             }
         });
 
@@ -204,20 +193,7 @@ public class GameFragment extends Fragment implements OnClickListener {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 GameBean item = playedGameList.get(i);
                 if (item.GameType == 0 || item.GameType == 1) {
-//                    Bundle bundle = new Bundle();
-//                    bundle.putInt("type", item.IsVertical);
-//                    bundle.putString("name", item.GameName);
-//                    String sig = com.util.Util.encryptMD5(MyApplication.getInstance().interaction.user.account + "-" + MyApplication.getInstance().interaction.user.token);
-//                    String url = MyApplication.getInstance().getWebUrl() + item.Url;
-//                    LogUtil.d("yjw", "WebUrl===" + url);
-//                    if (url.indexOf("?") > 0) {
-//                        url = url + "&account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
-//
-//                    } else {
-//                        url = url + "?account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
-//                    }
-//                    bundle.putString("url", url);
-//                    activity.startActivity(GameWebViewActivity.class, bundle);
+                   openGameUrl(item);
                 }
                 REFRESH_RECENT_LIST = true;
             }
@@ -239,6 +215,21 @@ public class GameFragment extends Fragment implements OnClickListener {
         error_tv.setVisibility(View.GONE);
 
         red_dot_iv = (ImageView) view.findViewById(R.id.red_dot_iv);
+    }
+
+    private void openGameUrl(GameBean item){
+        Bundle bundle = new Bundle();
+        bundle.putInt("type", item.IsVertical);
+        bundle.putString("name", item.GameName);
+        String url = Constant.SRV_URL_BASE + item.Url;
+//                    if (url.indexOf("?") > 0) {
+//                        url = url + "&account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
+//
+//                    } else {
+//                        url = url + "?account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
+//                    }
+        bundle.putString("url", url);
+        activity.startActivity(GameWebViewActivity.class, bundle);
     }
 
     /**
