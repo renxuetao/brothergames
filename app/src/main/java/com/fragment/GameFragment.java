@@ -221,14 +221,14 @@ public class GameFragment extends Fragment implements OnClickListener {
         Bundle bundle = new Bundle();
         bundle.putInt("type", item.IsVertical);
         bundle.putString("name", item.GameName);
-        String url = Constant.SRV_URL_BASE + item.Url;
+//        String url = Constant.SRV_URL_BASE + item.Url;
 //                    if (url.indexOf("?") > 0) {
 //                        url = url + "&account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
 //
 //                    } else {
 //                        url = url + "?account=" + MyApplication.getInstance().interaction.user.account + "&sig=" + sig;
 //                    }
-        bundle.putString("url", url);
+        bundle.putString("url", item.Url);
         activity.startActivity(GameWebViewActivity.class, bundle);
     }
 
@@ -243,9 +243,9 @@ public class GameFragment extends Fragment implements OnClickListener {
 //                .addParams("account", MyApplication.getInstance().getUserAccount())
 //                .addParams("token", token)
                 .build()
-                .connTimeOut(5000)
-                .readTimeOut(5000)
-                .writeTimeOut(5000)
+                .connTimeOut(30000)
+                .readTimeOut(30000)
+                .writeTimeOut(30000)
                 .execute(new StringCallback() {
                     @Override
                     public void onError(Call call, Exception e) {

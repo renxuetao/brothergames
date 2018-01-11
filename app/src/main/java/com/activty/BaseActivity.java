@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.app.MyApplication;
+import com.bean.CloseMsgBean;
 import com.brother.games.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
@@ -125,8 +126,8 @@ public abstract class BaseActivity extends FragmentActivity {
         super.onDestroy();
         myHandler.removeCallbacksAndMessages(null);
         myApplication.getActivityManager().popActivity(this);
-        unregisterReceiver(moreMsgReceiver);
-        unregisterReceiver(moreMsgNoDisplayReceiver);
+//        unregisterReceiver(moreMsgReceiver);
+//        unregisterReceiver(moreMsgNoDisplayReceiver);
         if (getallView() != null) {
             unbindDrawables(getallView());
         }
@@ -314,27 +315,27 @@ public abstract class BaseActivity extends FragmentActivity {
         return class_name;
     }
 
-    public MoreMsgReceiver moreMsgReceiver = null;
-
-    protected class MoreMsgReceiver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context arg0, Intent intent) {
-            if (progressDialog != null && !progressDialog.isShowing()) {
-                progressDialog.show();
-            }
-        }
-    }
-
-    public MoreMsgNoDisplayReceiver moreMsgNoDisplayReceiver = null;
-
-    protected class MoreMsgNoDisplayReceiver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context arg0, Intent intent) {
-            if (progressDialog != null && progressDialog.isShowing()) {
-                progressDialog.dismiss();
-            }
-        }
-    }
+//    public MoreMsgReceiver moreMsgReceiver = null;
+//
+//    protected class MoreMsgReceiver extends BroadcastReceiver {
+//        @Override
+//        public void onReceive(Context arg0, Intent intent) {
+//            if (progressDialog != null && !progressDialog.isShowing()) {
+//                progressDialog.show();
+//            }
+//        }
+//    }
+//
+//    public MoreMsgNoDisplayReceiver moreMsgNoDisplayReceiver = null;
+//
+//    protected class MoreMsgNoDisplayReceiver extends BroadcastReceiver {
+//        @Override
+//        public void onReceive(Context arg0, Intent intent) {
+//            if (progressDialog != null && progressDialog.isShowing()) {
+//                progressDialog.dismiss();
+//            }
+//        }
+//    }
 
     // 跳转到当前应用的设置界面
     private void goToAppSetting() {
@@ -343,6 +344,14 @@ public abstract class BaseActivity extends FragmentActivity {
         Uri uri = Uri.fromParts("package", getPackageName(), null);
         intent.setData(uri);
         startActivityForResult(intent, 123);
+    }
+
+    public void onEventMainThread(CloseMsgBean msg) {
+        switch (msg.getType()){
+            case 1000:
+                this.finish();
+                break;
+        }
     }
 
 }
